@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-  <title>Best Buy</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Buy</title>
+
   <style>
-    
     * {
       margin: 0;
       padding: 0;
@@ -19,7 +17,6 @@
       background-color: #f5f5f5;
       color: #333;
     }
-
 
     header {
       background-color: #222;
@@ -51,7 +48,6 @@
       text-decoration: underline;
     }
 
-    
     .hero {
       background-color: #ffe8c2;
       padding: 50px 30px;
@@ -95,12 +91,14 @@
       max-width: 100%;
       margin-top: 20px;
     }
+
     main {
       display: flex;
       padding: 30px;
       gap: 20px;
       flex-wrap: wrap;
     }
+
     .products-section {
       flex: 3;
       min-width: 250px;
@@ -161,6 +159,7 @@
       padding: 7px 10px;
       font-size: 12px;
     }
+
     .sidebar {
       flex: 1;
       min-width: 220px;
@@ -173,45 +172,7 @@
       border: 1px solid #ddd;
       margin-bottom: 20px;
     }
-
-    .box h3 {
-      font-size: 18px;
-      margin-bottom: 10px;
-    }
-
-    .cart-item {
-      display: flex;
-      justify-content: space-between;
-      font-size: 14px;
-      margin-bottom: 8px;
-    }
-
-    .cart-total {
-      border-top: 1px solid #ddd;
-      padding-top: 10px;
-      margin-top: 10px;
-      display: flex;
-      justify-content: space-between;
-      font-weight: bold;
-    }
-
-    .filter-group {
-      margin-bottom: 10px;
-      font-size: 14px;
-    }
-
-    .filter-group label {
-      display: block;
-      margin-bottom: 5px;
-    }
-
-    .filter-group select,
-    .filter-group input {
-      width: 100%;
-      padding: 5px;
-      font-size: 14px;
-    }
-    footer {
+       footer {
       background-color: #222;
       color: #fff;
       text-align: center;
@@ -219,192 +180,111 @@
       margin-top: 20px;
       font-size: 14px;
     }
-    @media (max-width: 900px) {
-      .products-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (max-width: 600px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-      }
-
-      .hero {
-        flex-direction: column;
-      }
-
-      main {
-        flex-direction: column;
-      }
-
-      .products-grid {
-        grid-template-columns: 1fr;
-      }
-    }
   </style>
 </head>
-<body>
-  <header>
-    <div class="logo">BEST BUY</div>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#">Deals</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Welcome to Best Buy</h1>
-      <p>
-        Your one-stop online store for electronics, fashion, and more.
-        Enjoy amazing discounts and fast delivery on all your orders.
-      </p>
-      <a href="#products" class="btn">Shop Now</a>
-    </div>
-    <img src="Logo.png" alt="Shopping Banner">
-  </section>
-  <main>
-    <section class="products-section" id="products">
-      <h2 class="section-title">Featured Products</h2>
-
-      <div class="products-grid">
-        <!-- Product 1 -->
-        <div class="product-card">
-          <img src="Wireless Headphones.webp" alt="Product 1">
-          <div class="product-name">Wireless Headphones</div>
-          <div class="product-price">₹1,999</div>
-          <p>High-quality sound with noise cancellation and long battery life.</p>
-          <div class="product-actions">
-            <span>⭐ 4.5</span>
-            <a href="#" class="btn">Add to Cart</a>
-          </div>
-        </div>
-
-        <!-- Product 2 -->
-        <div class="product-card">
-          <img src="Smart watch.webp" alt="Product 2">
-          <div class="product-name">Smart Watch</div>
-          <div class="product-price">₹2,499</div>
-          <p>Track your fitness, sleep, and notifications on the go.</p>
-          <div class="product-actions">
-            <span>⭐ 4.2</span>
-            <a href="#" class="btn">Add to Cart</a>
-          </div>
-        </div>
-
-        <!-- Product 3 -->
-        <div class="product-card">
-          <img src="casual sneakers.avif" alt="Product 3">
-          <div class="product-name">Casual Sneakers</div>
-          <div class="product-price">₹1,299</div>
-          <p>Comfortable and stylish sneakers for everyday wear.</p>
-          <div class="product-actions">
-            <span>⭐ 4.0</span>
-            <a href="#" class="btn">Add to Cart</a>
-          </div>
-        </div>
-
-        <!-- Product 4 -->
-        <div class="product-card">
-          <img src="Backpack.jpg" alt="Product 4">
-          <div class="product-name">Backpack</div>
-          <div class="product-price">₹899</div>
-          <p>Spacious and durable backpack for work, travel, or college.</p>
-          <div class="product-actions">
-            <span>⭐ 4.3</span>
-            <a href="#" class="btn">Add to Cart</a>
-          </div>
-        </div>
-
-        <!-- Product 5 -->
-        <div class="product-card">
-          <img src="Bluetooth speaker.jpeg" alt="Product 5">
-          <div class="product-name">Bluetooth Speaker</div>
-          <div class="product-price">₹1,499</div>
-          <p>Portable speaker with deep bass and powerful sound.</p>
-          <div class="product-actions">
-            <span>⭐ 4.6</span>
-            <a href="#" class="btn">Add to Cart</a>
-          </div>
-        </div>
-
-        <!-- Product 6 -->
-        <div class="product-card">
-          <img src="Sunglasses.webp" alt="Product 6">
-          <div class="product-name">Sunglasses</div>
-          <div class="product-price">₹599</div>
-          <p>UV-protected stylish sunglasses for men and women.</p>
-          <div class="product-actions">
-            <span>⭐ 4.1</span>
-            <a href="#" class="btn">Add to Cart</a>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- SIDEBAR -->
-    <aside class="sidebar">
-      <!-- Cart -->
-      <div class="box">
-        <h3>Your Cart</h3>
-        <div class="cart-item">
-          <span>Wireless Headphones</span>
-          <span>₹1,999</span>
-        </div>
-        <div class="cart-item">
-          <span>Smart Watch</span>
-          <span>₹2,499</span>
-        </div>
-        <div class="cart-total">
-          <span>Total</span>
-          <span>₹4,498</span>
-        </div>
-        <a href="#" class="btn" style="margin-top:10px; width:100%; text-align:center;">Checkout</a>
-      </div>
-
-      <!-- Filters -->
-      <div class="box">
-        <h3>Filter Products</h3>
-
-        <div class="filter-group">
-          <label for="category">Category</label>
-          <select id="category">
-            <option>All</option>
-            <option>Electronics</option>
-            <option>Fashion</option>
-            <option>Accessories</option>
-          </select>
-        </div>
-
-        <div class="filter-group">
-          <label for="price">Max Price (₹)</label>
-          <input type="number" id="price" placeholder="2000" />
-        </div>
-
-        <div class="filter-group">
-          <label for="search">Search</label>
-          <input type="text" id="search" placeholder="Search product..." />
-        </div>
-      </div>
-    </aside>
-  </main>
-
-  <!-- FOOTER -->
-  <footer>
-    © 2025 BestBuy. All rights reserved.
-  </footer>
-
-</body>
-</html>
 
 <body>
-    
+
+<header>
+  <div class="logo">BEST BUY</div>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#">Deals</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Welcome to Best Buy</h1>
+    <p>Your one-stop online store for electronics, fashion, and more.</p>
+    <a href="#products" class="btn">Shop Now</a>
+  </div>
+  <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9" alt="Shopping Banner">
+</section>
+
+<main>
+<section class="products-section" id="products">
+<h2 class="section-title">Featured Products</h2>
+
+<div class="products-grid">
+
+<div class="product-card">
+  <img src="https://www.beatsbydre.com/content/dam/beats/web/product/headphones/solo4-wireless/pdp/product-carousel/cloud-pink/pink-01-solo4.jpg.large.2x.jpg" alt="Wireless Headphones">
+  <div class="product-name">Wireless Headphones</div>
+  <div class="product-price">₹1,999</div>
+  <p>High-quality sound with noise cancellation.</p>
+  <div class="product-actions">
+    <span>⭐ 4.5</span>
+    <a href="#" class="btn">Add to Cart</a>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="https://gourban.in/cdn/shop/files/Pulse.jpg?v=1749553994&width=2048" alt="Smart Watch">
+  <div class="product-name">Smart Watch</div>
+  <div class="product-price">₹2,499</div>
+  <p>Track fitness and notifications.</p>
+  <div class="product-actions">
+    <span>⭐ 4.2</span>
+    <a href="#" class="btn">Add to Cart</a>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77" alt="Sneakers">
+  <div class="product-name">Casual Sneakers</div>
+  <div class="product-price">₹1,299</div>
+  <p>Comfortable and stylish.</p>
+  <div class="product-actions">
+    <span>⭐ 4.0</span>
+    <a href="#" class="btn">Add to Cart</a>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62" alt="Backpack">
+  <div class="product-name">Backpack</div>
+  <div class="product-price">₹899</div>
+  <p>Durable backpack.</p>
+  <div class="product-actions">
+    <span>⭐ 4.3</span>
+    <a href="#" class="btn">Add to Cart</a>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="https://media.wired.com/photos/683a782e13687d4580a2c63a/4:3/w_640%2Cc_limit/StormBox%25202%2520ryan%2520waniata.png" alt="Bluetooth Speaker">
+  <div class="product-name">Bluetooth Speaker</div>
+  <div class="product-price">₹1,499</div>
+  <p>Portable powerful sound.</p>
+  <div class="product-actions">
+    <span>⭐ 4.6</span>
+    <a href="#" class="btn">Add to Cart</a>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083" alt="Sunglasses">
+  <div class="product-name">Sunglasses</div>
+  <div class="product-price">₹599</div>
+  <p>UV protected sunglasses.</p>
+  <div class="product-actions">
+    <span>⭐ 4.1</span>
+    <a href="#" class="btn">Add to Cart</a>
+  </div>
+</div>
+
+</div>
+</section>
+</main>
+
+<footer>
+© 2025 BestBuy. All rights reserved.
+</footer>
+
 </body>
 </html>
